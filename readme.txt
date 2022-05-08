@@ -34,6 +34,7 @@ vkBasalt
    - fxaa
    - cas
 ReShade FX Shaders
+   - MXAO.fx
    - AmbientLight.fx
    - Colourfulness.fx
    - FakeHDR.fx

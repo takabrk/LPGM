@@ -25,5 +25,6 @@ ENABLE_VKBASALT=1 %command%
 /---home
       |-<user>
           |---.config
-                |---vkBasalt.conf
-                |---reshade-shaders-master
+                |-vkBasalt
+                    |---vkBasalt.conf
+                    |---reshade-shaders-master

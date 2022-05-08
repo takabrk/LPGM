@@ -28,3 +28,19 @@ ENABLE_VKBASALT=1 %command%
                 |-vkBasalt
                     |---vkBasalt.conf
                     |---reshade-shaders-master
+
+◇使用しているシェーダ
+vkBasalt
+   - fxaa
+   - cas
+ReShade FX Shaders
+   - AmbientLight.fx
+   - Colourfulness.fx
+   - FakeHDR.fx
+   - Curves.fx
+   - Clarity.fx
+   - DPX.fx
+   - MagicBloom.fx
+   - FineSharp.fx
+   - ReflectiveBumpMapping.fx
+   - AdaptiveFog.fx

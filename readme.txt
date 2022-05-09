@@ -3,6 +3,9 @@ Created by takamitsu_h
 
 これは、vkBasaltとReShade FX Shadersを使って、Linux版Steamで動作しているゲームの画質を大幅に向上し、フォトリアルに仕上げる物です。
 
+◇関連記事
+https://www.vsrx.work/article/487851526.html
+
 ◇使用するツールとシェーダ
 vkBasalt - Linux用のポストプロセッシングツール。WindowsのReShadeのような機能を持っており、グラフィックスAPIにはVulkanが使われています。
 https://github.com/DadSchoorse/vkBasalt

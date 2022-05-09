@@ -1,4 +1,5 @@
-◎Steam(Linux version) Photoreal set
+◎Steam Photorealistic set for Linux
+Created by takamitsu_h
 
 これは、vkBasaltとReShade FX Shadersを使って、Linux版Steamで動作しているゲームの画質を大幅に向上し、フォトリアルに仕上げる物です。
 
@@ -45,3 +46,7 @@ ReShade FX Shaders
    - FineSharp.fx
    - ReflectiveBumpMapping.fx
    - AdaptiveFog.fx
+   - FilmicPass.fx
+   - FilmGrain.fx
+   - LiftGammaGain.fx
+   - HSLShift.fx

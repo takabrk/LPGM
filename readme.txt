@@ -53,3 +53,10 @@ ReShade FX Shaders
    - FilmGrain.fx
    - LiftGammaGain.fx
    - HSLShift.fx
+
+◇高画質化の効果が高いおすすめゲームタイトル
+Dead Or Alive 5 Last Round
+Biohazard HD remaster
+アスタブリード
+NiGHTS
+巫剣神威控

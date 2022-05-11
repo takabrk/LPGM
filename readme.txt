@@ -1,7 +1,7 @@
 ◎Linux Photorealistic Game MOD
 Created by takamitsu_h
 
-これは、vkBasaltとReShade FX Shadersを使って、Linux版Steamで動作しているゲームやゲームエミュレーターで動作しているゲームの画質を大幅に向上し、フォトリアルに仕上げる物です。
+これは、vkBasalt+ReShade FX Shaders+qUINTを使って、Linux版Steam上で動作するゲームやゲームエミュレーター上で動くゲームの画質を大幅に向上し、フォトリアルに仕上げる物です。
 
 ◇関連記事
 https://www.vsrx.work/article/487851526.html

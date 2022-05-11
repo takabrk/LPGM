@@ -16,6 +16,9 @@ $ sudo apt install vkbasalt
 ReShade FX Shaders - ReShade用のシェーダ集。vkBasaltでも、ほとんどのシェーダーが使えます。
 https://github.com/crosire/reshade-shaders
 
+qUINT - ReShade用のシェーダ集。vkBasaltで使用可能です。
+https://github.com/martymcmodding/qUINT
+
 ◇使い方
 1.Steam(Linux version) Photoreal setをダウンロード
 2.homeディレクトリの.configディレクトリにvkBasaltディレクトリを新規作成する

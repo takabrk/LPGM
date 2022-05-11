@@ -41,12 +41,9 @@ vkBasalt
    - fxaa
    - cas
 ReShade FX Shaders
-   - MXAO.fx
    - AmbientLight.fx
-   - Colourfulness.fx
    - FakeHDR.fx
    - Curves.fx
-   - Clarity.fx
    - DPX.fx
    - MagicBloom.fx
    - FineSharp.fx
@@ -55,8 +52,14 @@ ReShade FX Shaders
    - FilmicPass.fx
    - FilmGrain.fx
    - LiftGammaGain.fx
-   - HSLShift.fx
-   - CinematicDOF.fx
+   - Technicolor
+   - Technicolor2
+qUINT
+   - qUINT_lightroom
+   - qUINT_mxao
+   - qUINT_deband
+   - qUINT_dof
+
 
 ◇超美麗化の効果が高いおすすめゲームタイトルとツール
 - Linux版Steam

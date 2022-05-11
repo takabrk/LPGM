@@ -1,7 +1,7 @@
-◎Steam Photorealistic set for Linux
+◎Linux Photorealistic Game MOD
 Created by takamitsu_h
 
-これは、vkBasaltとReShade FX Shadersを使って、Linux版Steamで動作しているゲームの画質を大幅に向上し、フォトリアルに仕上げる物です。
+これは、vkBasaltとReShade FX Shadersを使って、Linux版Steamで動作しているゲームやゲームエミュレーターで動作しているゲームの画質を大幅に向上し、フォトリアルに仕上げる物です。
 
 ◇関連記事
 https://www.vsrx.work/article/487851526.html
@@ -24,7 +24,7 @@ https://github.com/crosire/reshade-shaders
 
 ENABLE_VKBASALT=1 %command%
 
-◇ディレクトリ構成
+◇Linux上での動作ディレクトリ構成
 
 /---home
       |-<user>
@@ -53,10 +53,13 @@ ReShade FX Shaders
    - FilmGrain.fx
    - LiftGammaGain.fx
    - HSLShift.fx
+   - CinematicDOF.fx
 
-◇高画質化の効果が高いおすすめゲームタイトル
-Dead Or Alive 5 Last Round
-Biohazard HD remaster
-アスタブリード
-NiGHTS
-巫剣神威控
+◇超美麗化の効果が高いおすすめゲームタイトルとツール
+- Linux版Steam
+  Dead Or Alive 5 Last Round
+  Biohazard HD remaster
+  アスタブリード
+  NiGHTS
+  巫剣神威控
+- PPSSPP

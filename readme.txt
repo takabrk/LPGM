@@ -49,16 +49,7 @@ ReShade FX Shaders
    - FineSharp.fx
    - ReflectiveBumpMapping.fx
    - AdaptiveFog.fx
-   - FilmicPass.fx
-   - FilmGrain.fx
-   - LiftGammaGain.fx
-   - Technicolor
-   - Technicolor2
-qUINT
-   - qUINT_lightroom
-   - qUINT_mxao
-   - qUINT_deband
-   - qUINT_dof
+   - CinematicDOF.fx
 
 
 ◇超美麗化の効果が高いおすすめゲームタイトルとツール

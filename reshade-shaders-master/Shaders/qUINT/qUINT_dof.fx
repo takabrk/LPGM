@@ -322,11 +322,11 @@ float CircleOfConfusion(float2 texcoord, bool aggressiveLeakReduction)
 	if(depthdata.x < depthdata.y)
 	{
 		scenecoc = depthdata.x / depthdata.y - 1.0;
-		scenecoc *= exp2(-0.5*fADOF_NearBlurCurve*fADOF_NearBlurCurve);
+		scenecoc = ldexp(scenecoc, -0.5*fADOF_NearBlurCurve*fADOF_NearBlurCurve);
 	}
 	else
 	{
-		scenecoc = (depthdata.x - depthdata.y)/((depthdata.y * exp2(fADOF_FarBlurCurve*fADOF_FarBlurCurve)) - depthdata.y);
+		scenecoc = (depthdata.x - depthdata.y)/(ldexp(depthdata.y, fADOF_FarBlurCurve*fADOF_FarBlurCurve) - depthdata.y);
 	        scenecoc = saturate(scenecoc);
 	}
 
@@ -396,7 +396,7 @@ void PS_ReadFocus(in ADOF_VSOUT IN, out float focus : SV_Target0)
 	}
 	else
 	{
-		scenefocus = fADOF_ManualfocusDepth * fADOF_ManualfocusDepth;
+		scenefocus = fADOF_ManualfocusDepth;
 	}
 
     float prevscenefocus = tex2D(sADOF_FocusTexPrev, 0.5).x;
@@ -490,8 +490,6 @@ float4 PS_DoF_Main(in ADOF_VSOUT IN) : SV_Target0
 	BokehMax *= weightSum;
 #endif
 
-    int densityScale = max(1, 6 - iADOF_ShapeVertices);
-
 	[loop]
     for (int iVertices = 0; iVertices < iADOF_ShapeVertices && iVertices < 10; iVertices++)
     {
@@ -499,15 +497,9 @@ float4 PS_DoF_Main(in ADOF_VSOUT IN) : SV_Target0
         for(float iRings = 1; iRings <= nRings && iRings < 26; iRings++)
         {
             [loop]
-            for(float iSamplesPerRing = 0; iSamplesPerRing < iRings * densityScale && iSamplesPerRing < 26*2; iSamplesPerRing++)
+            for(float iSamplesPerRing = 0; iSamplesPerRing < iRings && iSamplesPerRing < 26; iSamplesPerRing++)
             {
-                float x = iSamplesPerRing/(iRings * densityScale);
-                float a = x * x * (3.0 - 2.0 * x);
-                float l = 2.55 * rcp(iADOF_ShapeVertices * iADOF_ShapeVertices * 0.4 - 1.0);
-                x = lerp(x, (1.0 + l) * x - a * l, fADOF_ShapeCurvatureAmount);
-
-                float2 sampleOffset = lerp(IN.offset0.xy,IN.offset0.zw, x);
-           
+                float2 sampleOffset = lerp(IN.offset0.xy,IN.offset0.zw,iSamplesPerRing/iRings);
                 ShapeRoundness(sampleOffset,fADOF_ShapeCurvatureAmount);
 
                 float4 sampleBokeh 	= tex2Dlod(sCommonTex0, float4(IN.txcoord.zw + sampleOffset.xy * (bokehRadiusScaled * iRings),0,0));

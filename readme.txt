@@ -39,7 +39,6 @@ ENABLE_VKBASALT=1 %command%
 ◇使用しているシェーダ
 vkBasalt
    - fxaa
-   - cas
 ReShade FX Shaders
    - AmbientLight.fx
    - FakeHDR.fx
@@ -50,7 +49,8 @@ ReShade FX Shaders
    - ReflectiveBumpMapping.fx
    - AdaptiveFog.fx
    - CinematicDOF.fx
-
+   - FineSharp.fx
+   - qUINT_sharp.fx
 
 ◇超美麗化の効果が高いおすすめゲームタイトルとツール
 - Linux版Steam

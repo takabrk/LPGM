@@ -49,6 +49,8 @@ ReShade FX Shaders
    - FineSharp.fx
    - ReflectiveBumpMapping.fx
    - MXAO.fx
+   - DPX.fx
+   - FakeHDR.fx
 
 ◇超美麗化の効果が高いおすすめゲームタイトルとツール
 - Linux版Steam

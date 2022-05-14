@@ -35,22 +35,21 @@ ENABLE_VKBASALT=1 %command%
                 |-vkBasalt
                     |---vkBasalt.conf
                     |---reshade-shaders-master
+                    |---customLUT
+                    |---readme.txt
 
 ◇使用しているシェーダ
 vkBasalt
    - fxaa
+   - cas
+   - lut
 ReShade FX Shaders
    - AmbientLight.fx
-   - FakeHDR.fx
-   - Curves.fx
-   - DPX.fx
    - MagicBloom.fx
    - FineSharp.fx
    - ReflectiveBumpMapping.fx
    - AdaptiveFog.fx
-   - CinematicDOF.fx
-   - FineSharp.fx
-   - qUINT_sharp.fx
+   - MXAO.fx
 
 ◇超美麗化の効果が高いおすすめゲームタイトルとツール
 - Linux版Steam

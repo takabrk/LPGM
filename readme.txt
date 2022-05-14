@@ -1,5 +1,6 @@
 ◎Linux Photorealistic Game MOD
 Created by takamitsu_h
+updated:20220515
 
 これは、vkBasalt+ReShade FX Shaders+qUINTを使って、Linux版Steam上で動作するゲームやゲームエミュレーター上で動くゲームの画質を大幅に向上し、フォトリアルに仕上げる物です。
 
@@ -40,7 +41,7 @@ ENABLE_VKBASALT=1 %command%
 
 ◇使用しているシェーダ
 vkBasalt
-   - fxaa
+   - smaa
    - dls
    - lut
 ReShade FX Shaders
@@ -51,6 +52,8 @@ ReShade FX Shaders
    - MXAO.fx
    - DPX.fx
    - FakeHDR.fx
+
+※vkBasaltは、デプスキャッシュを未搭載の為、DOF系シェーダー（DOF.fx・CinematicDOF.fxなど）を使えません。
 
 ◇超美麗化の効果が高いおすすめゲームタイトルとツール
 - Linux版Steam

@@ -41,7 +41,7 @@ ENABLE_VKBASALT=1 %command%
 ◇使用しているシェーダ
 vkBasalt
    - fxaa
-   - cas
+   - dls
    - lut
 ReShade FX Shaders
    - AmbientLight.fx

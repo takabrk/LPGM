@@ -48,7 +48,6 @@ ReShade FX Shaders
    - MagicBloom.fx
    - FineSharp.fx
    - ReflectiveBumpMapping.fx
-   - AdaptiveFog.fx
    - MXAO.fx
 
 ◇超美麗化の効果が高いおすすめゲームタイトルとツール

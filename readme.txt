@@ -22,7 +22,7 @@ https://github.com/martymcmodding/qUINT
 
 ◇使い方
 1.Linux Photorealistic Game MODをダウンロード
-2.UbuntuやDebianを使っている場合は、付属のインストールスクリプト(install_vkbasalt.sh)やapt installコマンドでインストール出来ます。他のディストリビューションの場合は、リポジトリに入っている可能性があるので確認してみてください。
+2.UbuntuやDebianを使っている場合は、vkBasaltを付属のインストールスクリプト(install_vkbasalt.sh)やapt installコマンドでインストール出来ます。他のディストリビューションの場合は、リポジトリに入っている可能性があるので確認してみてください。
 3.homeディレクトリの.configディレクトリにvkBasaltディレクトリを新規作成する
 4.作成したvkBasaltフォルダに、解凍したファイルを入れる
 5.Steamを起動し、各ゲームのプロパティの起動オプションに以下を追加すると使えます。

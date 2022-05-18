@@ -43,15 +43,13 @@ ENABLE_VKBASALT=1 %command%
 ◇使用しているシェーダ
 vkBasalt
    - smaa
-   - dls
    - lut
 ReShade FX Shaders
    - AmbientLight.fx
-   - MagicBloom.fx
+   - qUINT_bloom.fx
    - FineSharp.fx
    - ReflectiveBumpMapping.fx
    - MXAO.fx
-   - DPX.fx
    - FakeHDR.fx
    - AdaptiveFog.fx
 

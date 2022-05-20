@@ -1,6 +1,6 @@
 ◎Linux Photorealistic Game Mode
 Created by takamitsu_h
-updated:20220518
+updated:20220520
 
 これは、vkBasalt+ReShade FX Shaders+qUINTを使って、Linux版Steam上で動作するゲームやゲームエミュレーター上で動くゲームの画質を大幅に向上し、フォトリアルに仕上げる物です。
 
@@ -44,14 +44,12 @@ ENABLE_VKBASALT=1 %command%
 vkBasalt
    - smaa
    - lut
+   - dls
 ReShade FX Shaders
    - AmbientLight.fx
    - qUINT_bloom.fx
-   - FineSharp.fx
    - ReflectiveBumpMapping.fx
-   - MXAO.fx
    - FakeHDR.fx
-   - AdaptiveFog.fx
 
 ※vkBasaltは、デプスキャッシュを未搭載の為、DOF系シェーダー（DOF.fx・CinematicDOF.fxなど）を使えません。
 
